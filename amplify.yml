@@ -7,6 +7,10 @@ frontend:
   phases:
     preBuild:
       commands:
+        - PREV_SHA=$(envCache --get PACKAGE_LOCK_SHA1)
+        - echo "previous hash is $PREV_SHA"
+        - PACKAGE_LOCK_SHA1="$(sha1sum package-lock.json)"
+        - envCache --set PACKAGE_LOCK_SHA1 $PACKAGE_LOCK_SHA1
         - npm install
     build:
       commands:
