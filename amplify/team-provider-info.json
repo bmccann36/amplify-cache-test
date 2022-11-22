@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cachetest-dev-45135-authRole",
+      "UnauthRoleArn": "arn:aws:iam::645002887271:role/amplify-cachetest-dev-45135-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::645002887271:role/amplify-cachetest-dev-45135-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-cachetest-dev-45135-deployment",
+      "UnauthRoleName": "amplify-cachetest-dev-45135-unauthRole",
+      "StackName": "amplify-cachetest-dev-45135",
+      "StackId": "arn:aws:cloudformation:us-east-2:645002887271:stack/amplify-cachetest-dev-45135/47622820-6a4b-11ed-b365-0aa228722de8",
+      "AmplifyAppId": "d1z5j2v87cmf7g"
+    }
+  }
+}

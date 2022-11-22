@@ -1,0 +1,23 @@
+{
+  "name": "amplify-cache-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmccann36/amplify-cache-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmccann36/amplify-cache-test/issues"
+  },
+  "homepage": "https://github.com/bmccann36/amplify-cache-test#readme",
+  "dependencies": {
+    "chalk": "^5.1.2"
+  }
+}
