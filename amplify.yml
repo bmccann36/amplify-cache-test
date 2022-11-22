@@ -7,10 +7,9 @@ frontend:
   phases:
     preBuild:
       commands:
-        - bash compute-hashes.sh
-#        - echo $(envCache --get packageLockSha)
-#        - export PACKAGE_LOCK_SHA1="$(sha1sum package-lock.json | cut -d " " -f 1 )"
-#        - envCache --set packageLockSha $PACKAGE_LOCK_SHA1
+        # source the script so it runs in the context of the current shell
+        - . ./compute-hashes.sh
+        - echo $SHOULD_NPM_INSTALL
         - npm ci
     build:
       commands:
