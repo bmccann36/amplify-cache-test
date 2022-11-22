@@ -8,9 +8,10 @@ frontend:
     preBuild:
       commands:
         # source the script so it runs in the context of the current shell
-        - . ./compute-hashes.sh
-        - echo $SHOULD_NPM_INSTALL
-        - npm ci
+        - . ./check-hashes-for-npm.sh
+        - echo should npm install? $SHOULD_NPM_INSTALL
+        - if [ "$SHOULD_NPM_INSTALL" -eq 1 ]; then npm ci; fi
+
     build:
       commands:
         - echo "build goes here"
