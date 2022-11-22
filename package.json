@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/bmccann36/amplify-cache-test#readme",
   "dependencies": {
-    "aws-jwt-verify": "^3.2.0",
     "chalk": "^5.1.2",
     "winston": "^3.8.2"
   }
