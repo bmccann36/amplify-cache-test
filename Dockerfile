@@ -70,7 +70,6 @@ RUN yum -y update && \
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 RUN /bin/bash -c ". ~/.nvm/nvm.sh && \
     nvm install $VERSION_NODE_16 && nvm use $VERSION_NODE_16 && chown -R root:root /root/.nvm &&  \
-    npm install -g yarn@${VERSION_YARN} sm@${VERSION_SM} grunt-cli@${VERSION_GRUNT_CLI} bower@${VERSION_BOWER} vuepress@${VERSION_VUEPRESS} && \
     nvm alias default ${VERSION_NODE_DEFAULT} && nvm cache clear"
 
 
