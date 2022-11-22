@@ -7,7 +7,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        # source the script so it runs in the context of the current shell
+        # source the script so that it runs in the context of the current shell
         - . ./check-hashes-for-npm.sh
         - echo should npm install? $SHOULD_NPM_INSTALL
         - if [ "$SHOULD_NPM_INSTALL" -eq 1 ]; then npm ci; fi
