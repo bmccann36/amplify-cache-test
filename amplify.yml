@@ -14,7 +14,7 @@ frontend:
 
     build:
       commands:
-        - echo "build goes here"
+        - node src/test
 
   artifacts:
     baseDirectory: ./dist
